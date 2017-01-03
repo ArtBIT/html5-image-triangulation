@@ -15,7 +15,7 @@ npm init # optional
 npm start
 
 ```
-Open http://localhost:8080/ in your browser.
+Open [http://localhost:8080/](http://localhost:8080/) in your browser.
 
 # Demo
 Input image:
