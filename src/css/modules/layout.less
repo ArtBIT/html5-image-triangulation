@@ -1,0 +1,30 @@
+@import "../config/variables.less";
+@import "../config/colors.less";
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 0 0 @footer-height 0;
+    background: @theme-alt-background-color;
+    color: @theme-alt-color;
+}
+
+main {
+    height: calc(100vh ~"-" @footer-height);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: @footer-height;
+    line-height: @footer-height;
+    width: 100%;
+    background: @theme-main-background-color;
+    color: @theme-main-color;
+}
+

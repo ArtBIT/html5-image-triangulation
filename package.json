@@ -1,0 +1,30 @@
+{
+  "name": "triangulation",
+  "version": "1.0.0",
+  "scripts": {
+    "init": "npm install && cp -r node_modules/jquery/dist dist/vendor/jquery && cp -r node_modules/materialize-css/dist dist/vendor/materialize",
+    "build": "npm run init && npm run webpack",
+    "webpack": "webpack --minify --progress",
+    "start": "npm run build && $(npm bin)/http-server -a localhost"
+  },
+  "devDependencies": {},
+  "description": "Triangulate an image",
+  "main": "main.js",
+  "dependencies": {
+    "balalaika": "^1.0.1",
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "faster-delaunay": "^1.0.0",
+    "http-server": "^0.9.0",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "materialize-css": "^0.97.8",
+    "node-sass": "^4.1.1",
+    "sass-loader": "^4.1.1",
+    "style-loader": "^0.13.1",
+    "tinycolor2": "^1.4.1",
+    "webpack": "^1.14.0"
+  },
+  "author": "Djordje Ungar",
+  "license": "MIT"
+}
