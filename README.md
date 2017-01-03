@@ -26,6 +26,8 @@ Output image:
 
 <img src="/images/ali-after.png" width="300">
 
+Try out live demo [here](http://artbit.github.io/html5-image-triangulation/).
+
 # License
 
 [MIT](LICENSE.md)
