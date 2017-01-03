@@ -2,9 +2,8 @@
   "name": "triangulation",
   "version": "1.0.0",
   "scripts": {
-    "init": "npm install && cp -r node_modules/jquery/dist dist/vendor/jquery && cp -r node_modules/materialize-css/dist dist/vendor/materialize",
-    "build": "npm run init && npm run webpack",
-    "webpack": "webpack --minify --progress",
+    "postinstall": "rm -fr dist/vendor/* && cp -r node_modules/jquery/dist dist/vendor/jquery && cp -r node_modules/materialize-css/dist dist/vendor/materialize",
+    "build": "npm install && webpack --minify --progress",
     "start": "npm run build && $(npm bin)/http-server -a localhost"
   },
   "devDependencies": {},

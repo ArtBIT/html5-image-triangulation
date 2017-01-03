@@ -5,8 +5,8 @@ Turn an input image into a Delaunay triangulated grid.
 # Installation
 ```
 git clone https://github.com/ArtBIT/html5-image-triangulation.git
-cd html5-image-triangulation.git
-npm init
+cd html5-image-triangulation
+npm init # optional
 ```
 
 # Usage
